@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="swiper">
+    <swiper bindchange="onSwiperChage">
+      <swiper-item wx:for="{{swiperItems}}" wx:key="index">
+        <image src="{{item.imageUrl}}" mode="aspectFill" alt="轮播图"></image>
+      </swiper-item>
+    </swiper>
+    <view class="swiper-float-content">
+      <view wx:if="{{ currentSwiperIndex === index }}" wx:for="{{swiperItems}}" wx:key="index" class="title">
+        {{ item.title }}
+      </view>
+      <view  wx:if="{{ currentSwiperIndex === index }}" wx:for="{{ swiperItems }}" wx:key="index" class="descriptions-area">
+        <view wx:for="{{ item.config }}" wx:key="index" class="description">
+          <view class="description-title">
+            {{item.title}}
+          </view>
+          <view class="description-subtitle">
+            {{item.subtitle}}
+          </view>
+        </view>
+      </view>
+      <view class="avtion-btn">
+        选择
+      </view>
+      <view class="view-config">
+        详情了解
+      </view>
+      <view class="swiper-dots">
+        <view class="dot {{ currentSwiperIndex !== index || 'active' }}" wx:for="{{swiperItems}}" wx:key="index"></view>
+      </view>
+    </view>
+  </view>
+</view>

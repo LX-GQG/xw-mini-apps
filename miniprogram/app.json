@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/index",
+    "pages/activity/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Tesla",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#c3c3c3",
+    "selectedColor": "#1b1b1b",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Tesla",
+      "iconPath": "images/car.png",
+      "selectedIconPath": "images/car_select.png"
+    }, {
+      "pagePath": "pages/map/index",
+      "text": "地图",
+      "iconPath": "images/map.png",
+      "selectedIconPath": "images/map_select.png"
+    }, {
+      "pagePath": "pages/activity/index",
+      "text": "活动",
+      "iconPath": "images/avtivity.png",
+      "selectedIconPath": "images/activity_select.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
