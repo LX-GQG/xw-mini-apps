@@ -1,0 +1,38 @@
+.selection-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.selection-area .selection-circle{
+  width: 39rpx;
+  height: 46rpx;
+  border-radius: 50%;
+  border: 3rpx solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.selection-area .item {
+  display: flex;
+  flex-direction: row;
+}
+
+.selection-area .item .selection {
+  display: flex;
+  flex-direction: column;
+  width: 100rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  align-items: center;
+
+}
+
+.selection-area .selection-circle .check-circle{ 
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #000;
+}

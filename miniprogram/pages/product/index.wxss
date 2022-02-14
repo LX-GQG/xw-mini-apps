@@ -1,0 +1,57 @@
+/* pages/product/index.wxss */
+.header {
+  width: 100%;
+  height: 745rpx;
+  position: relative; 
+}
+.header .cover {
+  width: 100%;
+  height: 100%;
+
+}
+.header .title {
+  position: absolute;
+  top: 95rpx;
+  text-align: center;
+  width: 100%;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.content {
+  padding: 0 48rpx;
+  margin-top: 52rpx;
+}
+.content .description {
+  margin-top: 52rpx;
+  font-size: 29rpx;
+  color: #444;
+  letter-spacing: 4rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product-box {
+  margin-top: 112rpx;
+  width: 370rpx;
+  float: left;
+}
+.product-box .name {
+  font-size: 37rpx;
+  width: 270rpx;
+  height: 70rpx;
+  overflow: hidden;
+  font-weight: bold;
+  border-bottom: 2rpx solid #c3c3c3;
+  line-height: 33rpx;
+  
+}
+.product-box .config {
+  margin-top: 44rpx;
+}
+.product-box .config .label {
+  font-size: 28rpx;
+  color: #c3c3c3;
+  margin-bottom: 28rpx;
+}
+.product-box .config .value {
+  font-size: 29rpx;
+
+}

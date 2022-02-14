@@ -1,0 +1,43 @@
+.input-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 23rpx;
+}
+.input-item .label {
+  padding: 20rpx 25rpx;
+  font-size: 25rpx;
+}
+.input-item input {
+  padding: 24rpx 25rpx;
+  background-color: white;
+  font-size: 30rpx;
+  border-radius: 90rpx;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #fff;
+}
+.input-item .error {
+  border-color: red; 
+}
+.input-item .disabled {
+  background-color: #e2e2e3;
+  color: #9e9e9f;
+}
+
+.input-item .error-message {
+  position: absolute;
+  left: 20rpx;
+  font-size: 23rpx;
+  bottom: -35rpx;
+  color: red;
+}
+.input-item .tips {
+  position: absolute;
+  right: 20rpx;
+  font-size: 23rpx;
+  bottom: -35rpx;
+  color: #848484;
+}
