@@ -54,7 +54,8 @@ page {
   margin: 36rpx auto 50rpx;
 }
 .form .select-btn {
-  background-color: #486ada;
+  background-color: #65c0f5;
+  letter-spacing: 3rpx;
   color: white;
   text-align: center;
   line-height: 82rpx;

@@ -5,7 +5,7 @@
 }
 .swiper {
   width: 100%;
-  height: 86vh;
+  height: 88vh;
   position: relative;
 }
 .swiper image {
@@ -24,16 +24,16 @@
   align-items: center;
 }
 .swiper-float-content .title {
-  margin-top: 224rpx;
+  margin-top: 200rpx;
   font-size: 80rpx;
   animation: fadeLeft 1s;
 }
 .swiper-float-content .descriptions-area {
-  margin-top: 550rpx;
+  margin-top: 500rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 76%;
+  width: 80%;
   justify-content: space-between;
 }
 .swiper-float-content .descriptions-area .description {
@@ -52,12 +52,12 @@
   animation: fadeIn 1.5s;
 }
 .swiper-float-content .avtion-btn {
-  text-decoration: underline;
+  letter-spacing: 5rpx;
   pointer-events: all;
   width: 655rpx;
   height: 74rpx;
   color: #fff;
-  background-color: rgba(40, 44, 44, 0.4);
+  background-color: rgba(40, 44, 44, 0.6);
   border-radius: 36rpx;
   display: flex;
   align-items: center;
@@ -68,6 +68,7 @@
 }
 .swiper-float-content .view-config {
   color: #fff;
+  letter-spacing: 1rpx;
   margin-top: 23rpx;
   font-size: 25rpx;
   text-decoration: underline;
@@ -79,11 +80,11 @@
   align-items: center;
 }
 .swiper-dots .dot{
-  margin-top: 38rpx;
-  width: 39rpx;
+  margin-top: 52rpx;
+  width: 45rpx;
   height: 4rpx;
   border: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .swiper-dots .dot.active{
   background-color: rgba(255, 255, 255, 1);
@@ -125,7 +126,8 @@
 }
 .magazine .cover {
   width: 440rpx;
-  height: 558rpx;
+  height: 520rpx;
+  border-radius: 5rpx;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #000), var(--tw-ring-shadow, 0 0 #000), var(--tw-shadow);
   margin-bottom: 28rpx;
 }
@@ -255,8 +257,8 @@
   font-weight: bold;
 }
 .popup-menu .content .item-box image {
-  width: 310rpx;
-  height: 280rpx;
+  width: 290rpx;
+  height: 260rpx;
   border-radius: 20rpx;
   opacity: 0.9;
 }

@@ -1,6 +1,6 @@
 <view class="page">
   <view class="swiper">
-    <swiper bindchange="onSwiperChage">
+    <swiper bindchange="onSwiperChage" circular="true" autoplay="true" interval="7000">
       <swiper-item wx:for="{{swiperItems}}" wx:key="index">
         <image src="{{item.cover}}" mode="aspectFill" alt="轮播图"></image>
       </swiper-item>
@@ -100,7 +100,7 @@
         <view class="title">
           {{ item.username }}
         </view>
-        <image src="{{ item.userimg }}"></image>
+        <image mode="aspectFill" src="{{ item.userimg }}"></image>
       </view>
     </view>
   </view>

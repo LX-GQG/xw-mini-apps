@@ -80,11 +80,11 @@
     <view class="calculate-box">
       <view class="calculate-item">
         <view class="label">首付款/保障金</view>
-        <view class="number">￥149,999,999{{downPayment}}</view>
+        <view class="number">￥{{downPayment}}</view>
       </view>
       <view class="calculate-item {{ !isCollapse ? 'hide' : ''}}">
         <view class="label">贷款/融资金额</view>
-        <view class="number">￥850,000,000{{loan}}</view>
+        <view class="number">￥{{loan}}</view>
       </view>
       <view class="calculate-item {{ !isCollapse ? 'hide' : ''}}" style="{{ isCollapse ? 'margin: 35rpx 0 40rpx 0;' : ''}}">
         <view class="label">尾款比例</view>
@@ -96,7 +96,7 @@
       </view>
       <view class="calculate-item">
         <view class="label">月供</view>
-        <view class="number" style="font-size: 35rpx;">￥70,833,333{{mountlyPayment}}</view>
+        <view class="number" style="font-size: 35rpx;">￥{{mountlyPayment}}</view>
       </view>
     </view>
     <view class="action-btn">

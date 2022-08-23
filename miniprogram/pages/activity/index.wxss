@@ -106,17 +106,17 @@ swiper-item {
 }
 
 .dots .dot {
-  width: 10rpx;
+  width: 12rpx;
   height: 1rpx;
   background-color: #e1e1e1;
-  transition: all 1s;
+  transition: all 0.7s;
   margin-left: 10rpx
 }
 
 .dots .dot.active {
-  width: 20rpx;
+  width: 24rpx;
   background-color: #000;
-  transition: all 1s;
+  transition: all 0.7s;
 }
 
 .list .list-title {

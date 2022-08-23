@@ -12,9 +12,9 @@ Page({
     swiperItems: [
       {
         cover: 'http://gqgwr.cn/img/071.jpg',
-        title: 'WR AMD 270',
+        title: 'WR and 270',
         config: [
-          {title: "单身", subtitle: "18"},
+          {title: "温润而泽", subtitle: "空前绝后"},
           {title: "沉鱼落雁", subtitle: "闭月羞花"},
           {title: "绝无仅有", subtitle: "机不可失"}
         ],

@@ -9,7 +9,7 @@ Page({
     productItems: [
       {
         imageUrl: 'http://gqgwr.cn/img/071.jpg',
-        title: 'WR AMD 270',
+        title: 'WR and 270',
         productId: 1,
         message: "即使是满面疲倦和仆仆风尘，依然能看出她娇小的脸型和精致的五官，象混血儿一样奇特而夺目的美丽；细腻白皙的象羊奶凝乳一样的皮肤，仿佛透明的水晶色的新疆马奶提子一样，晶莹剔透的让人不忍多看，生怕目光落实了，把她的脸蛋刺出两个洞来。",
         productLines: [

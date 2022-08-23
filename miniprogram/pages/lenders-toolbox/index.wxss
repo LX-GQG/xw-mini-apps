@@ -157,6 +157,7 @@ page{
   font-weight: bold;
 }
 .float-card .action-btn {
+  letter-spacing: 5rpx;
   width: 535rpx;
   height: 70rpx;
   border: 3rpx solid #000;

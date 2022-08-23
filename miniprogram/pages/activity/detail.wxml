@@ -25,7 +25,7 @@
     </view>
 
     <view wx:if="{{ !activityCurrentUserApplication }}" class="activity-apply-btn" bindtap="apply" data-id="{{ activity._id }}">立即报名</view>
-    <view wx:if="{{ activityCurrentUserApplication }}" class="activity-apply-btn disable">已报名</view>
+    <view wx:if="{{ activityCurrentUserApplication }}" class="activity-apply-btn disable">{{ activityCurrentEnd ? "报名结束" : "已报名" }}</view>
   </view>
   <van-popup
     show="{{ show }}"

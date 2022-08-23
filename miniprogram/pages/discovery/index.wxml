@@ -1,12 +1,12 @@
 <view class="page">
   <view class="header">
-    <van-tabs color="#1b1b1b" active="{{ active }}" bind:change="onPageChange">
-      <van-tab title-style="width: 70rpx" line-width="width: 30rpx" animated="{{ true }}" wx:for="{{ pages }}" wx:key="index" title="{{item}}"></van-tab>
+    <van-tabs color="#1b1b1b" line-height="4rpx" title-inactive-color="#000" title-active-color="#1b1b1b" line-width="42rpx" animated="{{ true }}" active="{{ active }}" bind:change="onPageChange">
+      <van-tab title-style="width: 70rpx;letter-spacing:5rpx;height: 80rpx" wx:for="{{ pages }}" wx:key="index" title="{{item}}"></van-tab>
     </van-tabs>
   </view>
 
   <view class="swiper" wx:if="{{ swiperList.length }}">
-    <swiper bindchange="onSwiperChange">
+    <swiper bindchange="onSwiperChange" circular="true" autoplay="true" interval="5000">
       <swiper-item autoplay wx:for="{{ swiperList }}" wx:key="index" >
         <image mode="aspectFill" class="image" bindtap="navigatePage" data-type="{{ pageIndex === 0 ? 'article' : 'channel' }}" data-target-id="{{ item._id }}" src="{{ item.cover }}"></image>
       </swiper-item>

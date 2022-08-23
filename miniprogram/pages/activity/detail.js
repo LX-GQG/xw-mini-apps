@@ -10,6 +10,7 @@ Page({
     activity: null,
     activityCurrentUserApplication: null,
     show: false,
+    activityCurrentEnd: null
   },
 
   onClose() {
@@ -34,8 +35,14 @@ Page({
       }
     })
   },
-  onShow() {
-    
+  _activityCurrentEnd() {
+    console.log(this.data.activity.status)
+    if (this.data.activity.status === "signing-end") {
+      this.setData({
+        activityCurrentEnd: "signing-end",
+        activityCurrentUserApplication: "wf"
+      })
+    }
   },
 
   _loadData(id) {
@@ -64,6 +71,7 @@ Page({
       this.setData({
         [currentKey]: status
       })
+      this._activityCurrentEnd()
     })
   },
   // Todo: 修复报名状态方法
@@ -93,14 +101,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**

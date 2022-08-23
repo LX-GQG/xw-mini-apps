@@ -7,7 +7,7 @@
     </view>
   </view>
   <view class="swiper" wx:if="{{ recommendActivities.length }}">
-    <swiper bindchange="onSwiperChange">
+    <swiper bindchange="onSwiperChange" circular="true" autoplay="true" interval="6000">
       <swiper-item wx:for="{{ recommendActivities }}" wx:key="index">
         <view class="item-box" bindtap="goToDetail" data-id="{{ item._id }}">
           <image class="cover" mode="aspectFill" src="{{ item.cover }}">

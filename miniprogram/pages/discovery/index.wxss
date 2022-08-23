@@ -11,7 +11,7 @@
 }
 
 .swiper {
-  width: 660rpx;
+  width: 665rpx;
   height: 258rpx;
   position: relative;
   margin-bottom: 58rpx;
@@ -38,7 +38,7 @@ image {
 .swiper .dots .dot {
   width: 44rpx;
   height: 5rpx;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .swiper .dots .dot.active {
   background-color: rgba(255, 255, 255, 1);
