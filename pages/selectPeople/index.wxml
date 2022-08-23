@@ -1,0 +1,35 @@
+<view class="page">
+  <view class="form-tip">
+    请填写下方申请表
+  </view>
+  <view class="form">
+    <form>
+      <view class="name-area">
+        <view class="name-box">
+          <input-test class="input-test" required label="姓氏" model:value="{{ lastName }}"></input-test>
+        </view>
+        <view class="name-box">
+          <input-test class="input-test" required label="名字" model:value="{{ firstName }}"></input-test>
+        </view>
+      </view>
+      <input-test class="input-test" required rules="{{ [{type: 'email'}] }}" label="电子邮件" model:value="{{ email }}"></input-test>
+      <input-test class="input-test" required rules="{{ [{type: 'phone'}] }}" label="手机号码" model:value="{{ phone }}"></input-test>
+      <picker bindchange="bindProvinceChange" value="{{currentProvinceIndex}}" range-key="fullname" range="{{provincesAndCitiesTree}}">
+        <input-test writable="{{false}}" required label="省份" value="{{province}}"></input-test>
+      </picker>
+      <picker bindchange="bindCityChange" value="{{currentCityIndex}}" range-key="fullname" range="{{cities}}">
+          <input-test writable="{{false}}" required label="城市" value="{{city}}"></input-test>
+      </picker>
+      <view class="form-item">
+        <checkbox color="#000" checked="{{ true }}"/>
+        <view class="label"> 获取最新资讯</view>
+      </view>
+      <view class="buttom-tip">
+        为什么需要预约？当然是为了安排美女的档期啦！为了保证客户与美女都享受到最好的体验。我们需要根据你们提供的信息来提前安排合适的地点和时间。如您填写并提交上述信息，表示您同意我们的政策和安排。
+      </view>
+
+      <view class="select-btn" bindtap="onSubmit">预约</view>
+    </form>
+  </view>
+
+</view>

@@ -1,0 +1,4 @@
+/* components/field/index.wxss */
+.van-field__control {
+  padding-left: 15rpx;
+}

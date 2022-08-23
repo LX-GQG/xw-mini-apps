@@ -1,0 +1,11 @@
+.picker {
+  position: relative;
+}
+
+.icon-down {
+  width: 33rpx;
+  height: 33rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 106rpx;
+}

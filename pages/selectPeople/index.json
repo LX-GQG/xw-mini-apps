@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "input-test": "/components/input/index"
+  },
+  "backgroundColor": "#f7f7f7"
+}

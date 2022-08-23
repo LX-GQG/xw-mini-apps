@@ -1,0 +1,32 @@
+<view class="page">
+  <view class="header">
+    <image class="cover" mode="aspectFill" src="{{product.imageUrl}}"></image>
+    <view class="title">
+    {{product.title}}
+    </view>
+    <view class="content">
+      <rich-text class="description" nodes="{{product.message}}"></rich-text>
+      <scroll-view class="product-lines" scroll-x="true" style="width: 100%; height: 350px;">
+        <view style="{{ 'width: ' + (product.productLines.length * 370) + 'rpx' }}">
+          <view class="product-box" wx:for="{{ product.productLines }}" wx:key="index">
+            <view class="name">
+              {{item.name}}
+            </view>
+            <view class="config">
+              <view class="label">彩礼</view>
+              <view class="value">${{ item.price }}</view>
+            </view>
+            <view class="config">
+              <view class="label">地址</view>
+              <view class="value">{{ item.address }}</view>
+            </view>
+            <view class="config">
+              <view class="label">特点</view>
+              <view class="value">{{ item.trait }}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
