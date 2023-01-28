@@ -1,0 +1,94 @@
+.map {
+  width: 100vw;
+  height: 100vh;
+}
+.map-page {
+  position: relative;
+}
+.map-page .current-location-icon {
+  position: absolute;
+  width: 115rpx;
+  height: 115rpx;
+  right: 44rpx;
+  bottom: 41rpx;
+}
+.marker-classification-area {
+  position: absolute;
+  top: 167rpx;
+  left: 44rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+.marker-classification {
+  float: left;
+  display: flex;
+  box-shadow: 0 1px 5px rgba(0, 0, 0,.1);
+  flex-direction: row;
+  align-items: center;
+  width: 155rpx;
+  height: 52rpx;
+  background-color: #fff;
+  border-radius: 25rpx;
+  overflow: hidden;
+  margin-right: 22rpx;
+}
+.marker-classification .icon {
+  width: 36rpx;
+  height: 37rpx;
+  margin-left: 12rpx;
+  margin-right: 12rpx;
+  opacity: 0.3;
+}
+.marker-classification.active .icon{
+  opacity: 1 ;
+}
+.marker-classification .title {
+  font-size: 25rpx;
+  opacity: 0.3;
+}
+.marker-classification.active .title {
+  opacity: 1;
+}
+.search-area {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #fff;
+}
+.search-area .search-content {
+  margin-top: 210rpx;
+  padding: 0 44rpx;
+  display: flex;
+  flex-direction: column;
+}
+.search-area .search-content .location-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.search-area .search-content .location-box .icon {
+  width: 24rpx;
+  height: 24rpx;
+  margin: 0 22rpx;
+
+}
+.search-area .search-content .location-box .info-box {
+  height: 66rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.location-box .info-box .name {
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.location-box .info-box .address {
+  font-size: 20rpx;
+  color: #868687;
+}

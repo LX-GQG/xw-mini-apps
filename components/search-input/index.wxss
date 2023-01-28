@@ -1,0 +1,31 @@
+.search-input {
+  width: 495rpx;
+  height: 50rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 22rpx;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+.search-input .search-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 24rpx;
+  margin-right: 20rpx;
+}
+.search-input input {
+  font-size: 26rpx;
+  width: 370rpx;
+}
+.search-input .placeholder {
+  font-size: 26rpx;
+}
+.search-input .clear-icon {
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  right: 24rpx;
+  z-index: 99;
+}

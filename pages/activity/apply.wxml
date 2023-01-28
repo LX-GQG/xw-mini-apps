@@ -1,0 +1,20 @@
+<view class="page">
+  <belle-field class="belle-field" model:value="{{ email }}" label="邮箱" placeholder="邮箱" required rules="{{ [{type: 'email'}] }}"></belle-field>
+
+  <van-row gutter="15">
+    <van-col span="12">
+      <belle-field class="belle-field" model:value="{{ first_name }}" label="姓" placeholder="姓" required ></belle-field>
+    </van-col>
+    <van-col span="12">
+      <belle-field class="belle-field" model:value="{{ last_name }}" label="名" placeholder="名" required ></belle-field>
+    </van-col>
+  </van-row>
+
+  <belle-field class="belle-field" model:value="{{ phone }}" label="手机号" placeholder="手机号" required rules="{{ [{type: 'phone'}] }}"></belle-field>
+
+  <view class="textarea">
+    <textarea cols="70" rows="10" model:value="{{ marker }}" label="备注" placeholder="备注" placeholder-style="color: #D3D1D8;"></textarea>
+  </view>
+
+  <van-button custom-style="margin-top: 120rpx;width: 85vw;background-color: #ee6591;color: #fff" block round bindtap="apply">确认报名</van-button>
+</view>

@@ -1,0 +1,22 @@
+page {
+  background-color: aliceblue;
+  /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
+  /* background-image: url('https://7772-wr-8gvci4vsec13dbae-1309146779.tcb.qcloud.la/snow-gc66204d9a_1920.jpg?sign=7bd6208744f4768183c8e17526312515&t=1644049524');
+  background-size: 100% 100%; */
+
+}
+.page {
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+.textarea {
+  background-color: #fff;
+  padding: 35rpx;
+  border-radius: 45rpx;
+  font-size: 29rpx;
+  height: 200rpx;
+}
+.field {
+  border-radius: 25rpx;
+  margin-bottom: 30rpx
+}

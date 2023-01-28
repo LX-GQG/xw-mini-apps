@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "inputs": "../../components/input/index",
+    "picker-test": "../../components/picker/index",
+    "radio-test": "../../components/radio/index"
+  },
+  "navigationBarTitleText": "金融服务"
+}

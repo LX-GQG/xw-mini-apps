@@ -1,0 +1,95 @@
+.page {
+  padding: 0 42rpx;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  margin-bottom: 20rpx;
+  align-self: start;
+}
+
+.swiper {
+  width: 665rpx;
+  height: 258rpx;
+  position: relative;
+  margin-bottom: 58rpx;
+}
+swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper .image {
+  border-radius: 10rpx;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+.swiper .dots {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 22rpx;
+  right: 10rpx;
+}
+.swiper .dots .dot {
+  width: 44rpx;
+  height: 5rpx;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.swiper .dots .dot.active {
+  background-color: rgba(255, 255, 255, 1);
+}
+.article-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.article-list .news-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 56rpx;
+}
+.article-list .news-box .cover {
+  width: 182rpx;
+  height: 128rpx;
+  border-radius: 15rpx;
+}
+.article-list .news-box .meta .title{
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-top: 7rpx;
+  margin-bottom: 24rpx;
+}
+
+.article-list .news-box .meta .date {
+  color: #a5a5a5;
+  font-size: 18rpx;
+}
+
+.channel-list {
+  width: 100%;
+}
+.channel-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60rpx;
+}
+
+.channel-box .cover {
+  width: 312rpx;
+  height: 214rpx;
+  border-radius: 12rpx;
+  margin-bottom: 20rpx;
+}
+.channel-box .title {
+  font-size: 26rpx;
+  font-weight: bold;
+}

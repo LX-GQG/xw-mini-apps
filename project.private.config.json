@@ -1,0 +1,129 @@
+{
+  "setting": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/getOpenId/index",
+          "pathName": "pages/getOpenId/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/deployService/index",
+          "pathName": "pages/deployService/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/selectRecord/index",
+          "pathName": "pages/selectRecord/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sumRecordResult/index",
+          "pathName": "pages/sumRecordResult/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecord/index",
+          "pathName": "pages/updateRecord/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecordResult/index",
+          "pathName": "pages/updateRecordResult/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/updateRecordSuccess/index",
+          "pathName": "pages/updateRecordSuccess/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "预约",
+          "pathName": "pages/selectPeople/index",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "name": "月刊",
+          "pathName": "pages/magazine/index",
+          "query": "id=54ad1eea61e927bc09111ea90d679d56",
+          "scene": null
+        },
+        {
+          "name": "地图",
+          "pathName": "pages/map/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "位置详情",
+          "pathName": "pages/map/location",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "计算器",
+          "pathName": "pages/lenders-toolbox/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "视频",
+          "pathName": "pages/video/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "活动",
+          "pathName": "pages/activity/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "活动报名",
+          "pathName": "pages/activity/apply",
+          "query": "id=54ad1eea61f954200d13ca447d7fb79a",
+          "scene": null
+        },
+        {
+          "name": "活动详情",
+          "pathName": "pages/activity/detail",
+          "query": "id=617ef50c6207932e0496470e560ce4eb",
+          "scene": null
+        },
+        {
+          "name": "发现",
+          "pathName": "pages/discovery/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "文章内容",
+          "pathName": "pages/article/detail",
+          "query": "id=5b049cc86204af6a0b5f2d205a667bb3",
+          "scene": null
+        },
+        {
+          "name": "分类",
+          "pathName": "pages/article/channel",
+          "query": "id=17e3426e620491de0d03f792460061ea",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
+}

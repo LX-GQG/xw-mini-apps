@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/index",
+    "pages/activity/index",
+    "pages/product/index",
+    "pages/selectPeople/index",
+    "components/input/index",
+    "pages/magazine/index",
+    "pages/map/location",
+    "pages/lenders-toolbox/index",
+    "pages/video/index",
+    "pages/activity/detail",
+    "pages/activity/apply",
+    "pages/discovery/index",
+    "pages/article/detail",
+    "pages/article/channel"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于我们的服务人员跟踪您的信息并提供更好的服务"
+    }
+  },
+  "plugins": {
+    "citySelector": {
+      "version": "1.0.1",
+      "provider": "wx63ffb7b7894e99ae"
+    }
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "羽柔",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#c3c3c3",
+    "selectedColor": "#1b1b1b",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/discovery/index",
+        "text": "发现",
+        "iconPath": "images/feather.png",
+        "selectedIconPath": "images/feather_select.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "羽柔",
+        "iconPath": "images/girl.png",
+        "selectedIconPath": "images/girl_select.png"
+      },
+      {
+        "pagePath": "pages/map/index",
+        "text": "地图",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/map_select.png"
+      },
+      {
+        "pagePath": "pages/activity/index",
+        "text": "活动",
+        "iconPath": "images/avtivity.png",
+        "selectedIconPath": "images/activity_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

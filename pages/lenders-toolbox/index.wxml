@@ -1,0 +1,108 @@
+<view class="lenders-toolbox-page">
+  <view class="head-line">
+    金融服务
+  </view>
+  <view class="section product-selection-area">
+    <view class="title">
+      请选择您感兴趣的小姐姐
+    </view>
+    <view class="form-item"> 
+      <picker-test title="选择团队" defaultValue="{{ product }}" options="{{ products }}" bindchange="onProductSelect" />
+    </view>
+    <view class="form-item">
+      <picker-test title="选择小姐姐" defaultValue="{{ productLine }}" options="{{ productLines }}" bindchange="onProductLineSelect"/>
+    </view>
+    <view class="form-item">
+      <inputs label="彩礼(元)" writable="{{ false }}" value="{{ price }}"/>
+    </view>
+  </view>
+
+  <view class="section" style="margin-bottom: 106rpx;">
+    <view class="title" style="margin-bottom: 40rpx;">
+      选择彩礼支付方案
+    </view>
+    <view class="form-item">
+      <radio-test options="{{ financePlans }}" bindchange="onFinancePlanChange"/>
+    </view>
+    <view class="tips">
+      通过我司提供贷款支付所需彩礼，10%首付起步，1至5年期限灵活选择，每月分期支付金额，期满之后依法获得所有权。
+    </view>
+    <view class="form-item">
+      <picker-test title="金融产品" defaultValue="{{ financeProduct }}" options="{{ financeProducts }}" bindchange="onFinanceProductChange"/>
+    </view>
+    <view class="form-item">
+      <picker-test title="期数" defaultValue="{{ periods }}" options="{{ periodsOption }}" bindchange="onPeriodsChange"/>
+    </view>
+    <view class="form-item">
+      <inputs label="首付/保证金比例%" value="{{ rate }}" bindinput="onRateInput"/>
+    </view>
+    <view class="form-item">
+      <inputs label="年化率 %" value="{{ annualizedRate }}" disabled tips="折合年化利率7.30%" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="title">
+      查看适用金融机构
+    </view>
+    <view class="form-item">
+      <picker-test title="登记省份" defaultValue="{{ currentProvince }}" options="{{ allProvinces }}" labelKey="name" bindchange="onProvinceChange"/>
+    </view>
+    <view class="form-item">
+      <picker-test title="登记城市" defaultValue="{{ currentCity }}" options="{{ cities }}" labelKey="name" bindchange="onCityChange"/>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="tips">
+      选择金融机构进行自助在线预审申请，提前了解您目前的贷款额度，帮助您在支付彩礼时更好地进行资金规划。
+    </view>
+    <view class="bank-area">
+      <view class="bank-box" wx:for="{{ financeOrgs }}" wx:key="index">
+        <image mode="heightFix" src="{{ item.logo }}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="occupation-box">
+
+</view>
+<view class="float-card">
+    <view class="product-box {{ isCollapse ? 'collapse' : ''}}">
+      <image class="product-image" mode="widthFix" src="{{ currentProductImage }}"></image>
+      <view class="product-name">{{ product }}</view>
+      <view calss="product-line-name">{{ productLine }}</view>
+    </view>
+    <view class="action-box">
+      <view class="label">计算结果</view>
+      <image class="icon" bindtap="toggleCollapse" src="{{ isCollapse ? '../../images/sub.png' : '../../images/add.png' }}"></image>
+    </view>
+    <view class="calculate-box">
+      <view class="calculate-item">
+        <view class="label">首付款/保障金</view>
+        <view class="number">￥{{downPayment}}</view>
+      </view>
+      <view class="calculate-item {{ !isCollapse ? 'hide' : ''}}">
+        <view class="label">贷款/融资金额</view>
+        <view class="number">￥{{loan}}</view>
+      </view>
+      <view class="calculate-item {{ !isCollapse ? 'hide' : ''}}" style="{{ isCollapse ? 'margin: 35rpx 0 40rpx 0;' : ''}}">
+        <view class="label">尾款比例</view>
+        <view class="number">0%</view>
+      </view>
+      <view class="calculate-item {{ !isCollapse ? 'hide' : ''}}">
+        <view class="label">尾款金额</view>
+        <view class="number">￥0</view>
+      </view>
+      <view class="calculate-item">
+        <view class="label">月供</view>
+        <view class="number" style="font-size: 35rpx;">￥{{mountlyPayment}}</view>
+      </view>
+    </view>
+    <view class="action-btn">
+      预约
+    </view>
+    <view class="tips {{ !isCollapse ? 'hide' : ''}}">
+      我司金融服务由有资质的金融机构提供, 此计算结果仅供参考, 最后以金额机构实际审核结果为准。彩礼对应价格、贴息比例、贷款区间等相关信息均已实际情况为准，计算器结果仅供参考。
+    </view>
+  </view>

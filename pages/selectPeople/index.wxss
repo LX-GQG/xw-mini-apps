@@ -1,0 +1,67 @@
+page {
+  background-color: #f7f7f7;
+}
+.form-tip {
+  font-size: 28rpx;
+  color: #888;
+  text-align: center;
+  margin: 40rpx auto;
+}
+.input-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.input-item .label {
+  padding: 20rpx 25rpx;
+  font-size: 25rpx;
+}
+.input-item input {
+  padding: 24rpx 25rpx;
+  background-color: white;
+  font-size: 30rpx;
+  border-radius: 90rpx;
+  color: #000;
+  font-weight: bold;
+}
+.name-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.name-box {
+  width: 45%;
+}
+.form {
+
+  padding: 0 30rpx;
+}
+.form-item {
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.form-item .label {
+  margin-left: 15rpx;
+  font-size: 26rpx;
+}
+
+.form .buttom-tip {
+  font-size: 23rpx;
+  color: #777777;
+  margin: 36rpx auto 50rpx;
+}
+.form .select-btn {
+  background-color: #65c0f5;
+  letter-spacing: 3rpx;
+  color: white;
+  text-align: center;
+  line-height: 82rpx;
+  font-weight: bold;
+  font-size: 30rpx;
+  width: 100%;
+  height: 80rpx;
+  border-radius: 82rpx;
+}

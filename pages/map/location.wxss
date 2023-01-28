@@ -1,0 +1,73 @@
+.location-page {
+  padding: 0 40rpx;
+}
+.head-area {
+  padding: 40rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #ededed;
+}
+.head-area .meta {
+  display: flex;
+  flex-direction: column;
+}
+.head-area .meta .title {
+  font-size: 35rpx;
+  font-weight: bold;
+  height: 35rpx;
+  line-height: 35rpx;
+  margin-bottom: 40rpx;
+}
+.head-area .meta .address {
+  font-size: 24rpx;
+  height: 22rpx;
+  line-height: 22rpx;
+  color: #5e5e61;
+  margin-bottom: 35rpx;
+}
+.head-area .meta .classification {
+  width: 134rpx;
+  padding: 9rpx 18rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 50rpx;
+  text-align: center;
+  color: #626263;
+  font-size: 28rpx;
+}
+.head-area .navigation {
+  margin-right: 25rpx;
+  width: 150rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-area .navigation .icon {
+  margin-bottom: 25rpx;
+  width: 55rpx;
+  height: 55rpx;
+}
+.head-area .navigation .label {
+  font-size: 20rpx;
+  color: #7c7c7c;
+}
+.info-area {
+  margin-top: 54rpx;
+}
+.info-area .info-box {
+  margin-bottom: 68rpx;
+}
+.info-area .info-box .title{
+  font-size: 25rpx;
+  font-weight: bold;
+  margin-bottom: 22rpx;
+}
+.info-area .info-box .content {
+  font-size: 25rpx;
+  line-height: 40rpx;
+}
+.info-area .info-box .phone {
+  font-size: 24rpx;
+  text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+<view class="map-page">
+  <map wx:if="{{ !isSearching }}" class="map" id="myMap" latitude="{{ latitude }}" longitude="{{ longitude }}" markers="{{ markers }}" show-location bindmarkertap="onMarkerTap">
+  </map>
+  <image wx:if="{{ !isSearching }}" class="current-location-icon" bindtap="onCurrentLocationClick" src="../../images/location.png"></image>
+  <search-input bindconfirm="onSearch" bindclear="onClear" style="position: absolute;top: 73rpx;left: 44rpx;"></search-input>
+  <scroll-view wx:if="{{ !isSearching }}" scroll-x class="marker-classification-area">
+    <view style="{{ 'padding-left: 20rpx; width: ' + (222 * markerClassifications.length) + 'rpx' }}">
+      <view wx:for="{{ markerClassifications }}" wx:key="index" bindtap="onMarkerClassificationTap" class="marker-classification {{ item.isActive ? 'active' : ''}}" data-id="{{ item.id }}">
+        <image class="icon" src="{{ item.icon }}"></image>
+        <view class="title">{{ item.title }}</view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="search-area" wx:if="{{ isSearching }}">
+    <view class="search-content">
+      <view class="location-box" bindtap="gotoLocation" data-location="{{ item }}" wx:for="{{ locationResult }}" wx:key="index">
+        <image class="icon" src="../../images/location_search.png"></image>
+        <view class="info-box">
+          <view class="name">{{ item.name }}</view>
+          <view class="address">{{ item.address }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

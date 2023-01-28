@@ -1,0 +1,5 @@
+<view class="search-input">
+  <image class="search-icon" src="../../images/search.png"></image>
+  <input type="text" bindconfirm="onConfirm" bindinput="onInput" placeholder="搜索" placeholder-class="placeholder" model:value="{{ value }}"/>
+  <image class="clear-icon" src="../../images/close.png" wx:if="{{isClearable}}" bindtap="onClear"></image>
+</view>

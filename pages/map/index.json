@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-input": "../../components/search-input/index"
+  },
+  "navigationStyle": "custom"
+}
