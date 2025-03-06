@@ -16,7 +16,9 @@ Page({
     allmarkers: [],
     markerClassifications: [],
     isSearching: false,
-    locationResult: []
+    locationResult: [],
+    navigateHeight: null,
+    navHeight: null
   },
 
   /**
@@ -24,15 +26,24 @@ Page({
    */
   onLoad: function (options) {
     const { location } = getCurrentLocation()
-    
+    let res = wx.getSystemInfoSync()
+    let statusBarHeight = res.statusBarHeight
+    let menuinformation = wx.getMenuButtonBoundingClientRect();
+    let navigateHeight = menuinformation.top+statusBarHeight
+    let navHeight = menuinformation.height
+    console.log(location)
+    this.setData({
+      navigateHeight: navigateHeight,
+      navHeight: navHeight
+    });
     this.db = wx.cloud.database()
     this.db.collection('marker_classification').get().then(res => {
       const markerClassifications = res.data
       this._buildMarkerClassification(markerClassifications)
     })
     this.setData({
-      latitude: location.lat,
-      longitude: location.lng
+      latitude: location?.lat,
+      longitude: location?.lng
     })
   },
 

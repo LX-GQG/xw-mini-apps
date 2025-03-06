@@ -8,6 +8,7 @@ export const key = '5ABBZ-AOMW5-PK5I2-QYQUS-WBDWH-ELFR4'
 export const initCurrentLocation = () => {
   qqmapsdk.reverseGeocoder({
     success(res){
+      console.log("打印" + res)
       wx.setStorageSync('userCurrentLocation',res.result['ad_info'])
     }
   })

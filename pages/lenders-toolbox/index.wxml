@@ -1,4 +1,4 @@
-<view class="lenders-toolbox-page">
+<!-- <view class="lenders-toolbox-page">
   <view class="head-line">
     金融服务
   </view>
@@ -105,4 +105,4 @@
     <view class="tips {{ !isCollapse ? 'hide' : ''}}">
       我司金融服务由有资质的金融机构提供, 此计算结果仅供参考, 最后以金额机构实际审核结果为准。彩礼对应价格、贴息比例、贷款区间等相关信息均已实际情况为准，计算器结果仅供参考。
     </view>
-  </view>
+  </view> -->

@@ -125,8 +125,8 @@
   margin-bottom: 50rpx;
 }
 .magazine .cover {
-  width: 440rpx;
-  height: 520rpx;
+  width: 460rpx;
+  height: auto;
   border-radius: 5rpx;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #000), var(--tw-ring-shadow, 0 0 #000), var(--tw-shadow);
   margin-bottom: 28rpx;

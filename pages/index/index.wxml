@@ -9,20 +9,32 @@
       <view wx:if="{{ currentSwiperIndex === index }}" wx:for="{{swiperItems}}" wx:key="index" class="title">
         {{ item.title }}
       </view>
+      <wxs module="config">
+        var splitString = function(data) {
+          if(data) {
+            return data.toString().split("|")
+          }else{
+            return data.toString()
+          }
+        }
+        module.exports = {
+          splitString: splitString
+        }
+      </wxs>
       <view  wx:if="{{ currentSwiperIndex === index }}" wx:for="{{ swiperItems }}" wx:key="index" class="descriptions-area">
         <view wx:for="{{ item.config }}" wx:key="index" class="description">
           <view class="description-title">
-            {{item.title}}
+            {{config.splitString(item)[0]}}
           </view>
           <view class="description-subtitle">
-            {{item.subtitle}}
+            {{config.splitString(item)[1]}}
           </view>
         </view>
       </view>
-      <view wx:if="{{ currentSwiperIndex === index }}" wx:for="{{ swiperItems }}" wx:key="index" data-product-id="{{ item.productId }}" class="avtion-btn" bindtap="onBtnClick">
-        选择
+      <view wx:if="{{ currentSwiperIndex === index }}" wx:for="{{ swiperItems }}" wx:key="index" data-product-id="{{ item.product }}" class="avtion-btn" bindtap="onBtnClick">
+        查看
       </view>
-      <view wx:if="{{ currentSwiperIndex === index }}" wx:for="{{ swiperItems }}" wx:key="index" class="view-config" bindtap="gotoProduct" data-product-id="{{ item.productId }}">
+      <view wx:if="{{ currentSwiperIndex === index }}" wx:for="{{ swiperItems }}" wx:key="index" class="view-config" bindtap="gotoProduct" data-product-id="{{ item.product }}">
         详情了解
       </view>
       <view class="swiper-dots">
@@ -35,13 +47,13 @@
     <view class="title">
       {{ item.magzineTitle }}
     </view>
-    <image bindtap="clickMagazine"  data-id="{{ item._id }}" class="cover" src="{{ item.cover }}"></image>
+    <image bindtap="clickMagazine"  data-id="{{ item._id }}" class="cover" mode="widthFix" src="{{ item.cover }}"></image>
     <view class="name">
       {{ item.title }}
     </view>
   </view>
 
-  <view class="icon-banner" bindtap="gotoLendersToolbox">
+  <!-- <view class="icon-banner" bindtap="gotoLendersToolbox">
     <image class="banner-bg credit-card" src="https://china-community-app.tesla.cn/wechatmini/credit_card.png"></image>
     <view class="content">
         <view class="title">
@@ -51,18 +63,7 @@
           定制金额
         </view>
     </view>
-  </view>
-  <view class="icon-banner" bindtap="gotoVideo">
-    <image class="banner-bg" src="https://china-community-app.tesla.cn/wechatmini/card_bg.png"></image>
-    <view class="content">
-        <view class="title">
-          人物视频
-        </view>
-        <view class="subtitle">
-          观看视频
-        </view>
-    </view>
-  </view>
+  </view> -->
 
   <view class="icon-box-area">
     <view class="icon-box" bindtap="gotoCleanEnergy">
@@ -91,14 +92,14 @@
   <view class="popup-menu">
     <view class="header">
       <view class="title">
-        选择人物
+        人物列表
       </view>
       <image class="close_icon" src="../../images/close.png" bindtap="close"></image>
     </view>
     <view class="content" >
-      <view class="item-box" wx:for="{{ figure }}" wx:key="index" bindtap="clickProduct" data-id="{{ item.id }}">
+      <view class="item-box" wx:for="{{ figure }}" wx:key="index">
         <view class="title">
-          {{ item.username }}
+          {{ item.name }}
         </view>
         <image mode="aspectFill" src="{{ item.userimg }}"></image>
       </view>

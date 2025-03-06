@@ -19,7 +19,8 @@ Page({
     this.db.collection('channel').doc(options.id).get().then(res => {
       let channel = res.data
       this.db.collection('article').where({
-        channel: channel._id
+        channel: channel._id,
+        status: true
       }).get().then(res2 => {
         let articleList = res2.data
         articleList.forEach((item, index) => {

@@ -9,8 +9,8 @@
       <belle-field class="belle-field" model:value="{{ last_name }}" label="名" placeholder="名" required ></belle-field>
     </van-col>
   </van-row>
-
-  <belle-field class="belle-field" model:value="{{ phone }}" label="手机号" placeholder="手机号" required rules="{{ [{type: 'phone'}] }}"></belle-field>
+<!-- 
+  <belle-field class="belle-field" model:value="{{ phone }}" label="手机号" placeholder="手机号" required rules="{{ [{type: 'phone'}] }}"></belle-field> -->
 
   <view class="textarea">
     <textarea cols="70" rows="10" model:value="{{ marker }}" label="备注" placeholder="备注" placeholder-style="color: #D3D1D8;"></textarea>

@@ -14,7 +14,7 @@
 }
 .marker-classification-area {
   position: absolute;
-  top: 167rpx;
+  top: 176rpx;
   left: 44rpx;
   height: 50rpx;
   display: flex;
@@ -26,7 +26,7 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0,.1);
   flex-direction: row;
   align-items: center;
-  width: 155rpx;
+  width: auto;
   height: 52rpx;
   background-color: #fff;
   border-radius: 25rpx;
@@ -45,6 +45,7 @@
 }
 .marker-classification .title {
   font-size: 25rpx;
+  margin-right: 16rpx;
   opacity: 0.3;
 }
 .marker-classification.active .title {

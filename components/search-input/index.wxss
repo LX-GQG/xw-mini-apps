@@ -1,6 +1,6 @@
 .search-input {
   width: 495rpx;
-  height: 50rpx;
+  height: 100%;
   background-color: #fff;
   display: flex;
   flex-direction: row;

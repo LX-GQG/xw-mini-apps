@@ -1,7 +1,7 @@
 <view class="page">
   <view class="header">
     <van-tabs color="#1b1b1b" line-height="4rpx" title-inactive-color="#000" title-active-color="#1b1b1b" line-width="42rpx" animated="{{ true }}" active="{{ active }}" bind:change="onPageChange">
-      <van-tab title-style="width: 70rpx;letter-spacing:5rpx;height: 80rpx" wx:for="{{ pages }}" wx:key="index" title="{{item}}"></van-tab>
+      <van-tab title-style="width: 130rpx;letter-spacing:5rpx;height: 80rpx" wx:for="{{ pages }}" wx:key="index" title="{{item}}"></van-tab>
     </van-tabs>
   </view>
 
@@ -30,6 +30,16 @@
     <van-row gutter="20">
       <van-col span="12" wx:for="{{ channelList }}" wx:key="index" >
         <view class="channel-box" bindtap="navigatePage" data-type="channel" data-target-id="{{ item._id }}">
+          <image class="cover" src="{{ item.cover }}"></image>
+          <view class="title">{{ item.title }}</view>
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+  <view wx:if="{{ webList.length }}" class="channel-list">
+    <van-row gutter="20">
+      <van-col span="12" wx:for="{{ webList }}" wx:key="index" >
+        <view class="channel-box" bindtap="navigatePageWeb" data-id="{{ item.id }}">
           <image class="cover" src="{{ item.cover }}"></image>
           <view class="title">{{ item.title }}</view>
         </view>
